@@ -4,8 +4,10 @@ tipo = input("Digite o tipo abastecido \n"
 qtdLitros = float(input("quantos litros: "))
 valorG = 5.8
 valorE = 4.9
-if tipo == "G" :
+if tipo == "g" or tipo == "G" :
     valor = qtdLitros * valorG
-else:
+elif tipo == "e" or tipo == "E":
     valor = qtdLitros * valorE
-    print(f"voce gastou R${valor: .2f}")
+else:
+    print("tipo de combustivel invalido!")
+print(f"voce gastou R${valor:.2f}")
