@@ -1,29 +1,30 @@
-mes= int(input("digite um numero: "))
-if mes== 1:
+mes= int(input("digite um numero entre 1 e 12: "))
+if mes <=0 or mes >12:
+    print("mes invalido")
+else:
+ if mes== 1:
     print("janeiro")
-elif mes == 2:
+ elif mes == 2:
     print("fevereiro")
-if mes == 3:
+ elif mes == 3:
      print("marco")
-elif mes == 4:
+ elif mes == 4:
     print("abril")
-if mes == 5:
+ elif mes == 5:
     print("maio")
-elif mes == 6:
+ elif mes == 6:
     print("junho")
-if mes == 7:
+ elif mes == 7:
     print("julho")
-elif mes == 8:
+ elif mes == 8:
     print("agosto")
-if mes == 9:
+ elif mes == 9:
     print("setembro")
-elif mes == 10:
+ elif mes == 10:
     print("outubro")
-if mes == 11:
+ elif mes == 11:
     print("novembro")
-elif mes == 12:
+ else:
     print("dezembro")
-if mes <=0:
-    print("mes invalido")
-elif mes >12:
-    print("mes invalido")
+
+
